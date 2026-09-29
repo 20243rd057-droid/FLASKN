@@ -29,7 +29,7 @@ Both routes accept `GET` requests.
 ```mermaid
 flowchart TD
     Client[HTTP client] --> App[Flask app: app.py]
-    App -->|GET device lookup| Lookup[GET /json/{mac}: exact MAC key]
+    App -->|GET device lookup| Lookup["GET /json/{mac}: exact MAC key"]
     Lookup --> Data[(API.json)]
     Data -->|Print Name, Protocolos, VLANs, status| Console[Server console]
     Data -->|Return Name as plain text| Client
