@@ -1,0 +1,3715 @@
+{
+    "3D:RF:09:7F::": {
+        "Name": "R1",
+        "status": "online",
+        "Protocolos": [
+            "OSPF",
+            "ST"
+        ],
+        "VLANs": {
+            "VL1": {
+                "Ports": [],
+                "Plicies": [],
+                "ET": true,
+                "IP": "192.168.10.68",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:01": {
+        "Name": "SW2",
+        "status": "online",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/1"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.2",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.2",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/17",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.2",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:02": {
+        "Name": "FW3",
+        "status": "offline",
+        "Protocolos": [
+            "EIGRP",
+            "LACP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/6",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.3",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/4",
+                    "Gi0/13"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.3",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.30.3",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:03": {
+        "Name": "AP4",
+        "status": "online",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/7",
+                    "Gi0/19",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.4",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/8"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.4",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/7",
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.30.4",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:04": {
+        "Name": "R5",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/18",
+                    "Gi0/21",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.5",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/11"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.5",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:05": {
+        "Name": "SW6",
+        "status": "online",
+        "Protocolos": [
+            "BGP",
+            "LACP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/8",
+                    "Gi0/9",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.6",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.6",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:06": {
+        "Name": "FW7",
+        "status": "offline",
+        "Protocolos": [
+            "BGP",
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/13"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.7",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.7",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:07": {
+        "Name": "AP8",
+        "status": "online",
+        "Protocolos": [
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/6",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.8",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:08": {
+        "Name": "R9",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "RIP",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/4",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.9",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.9",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.9",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:09": {
+        "Name": "SW10",
+        "status": "online",
+        "Protocolos": [
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/8"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.10",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/8",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.10",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0A": {
+        "Name": "FW11",
+        "status": "offline",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.11",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/19",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.11",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0B": {
+        "Name": "AP12",
+        "status": "online",
+        "Protocolos": [
+            "OSPF",
+            "VRRP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/12",
+                    "Gi0/14",
+                    "Gi0/15",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.12",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/8",
+                    "Gi0/11",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.20.12",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/8",
+                    "Gi0/9",
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.12",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0C": {
+        "Name": "R13",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/7",
+                    "Gi0/13",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.13",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0D": {
+        "Name": "SW14",
+        "status": "online",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/5",
+                    "Gi0/7",
+                    "Gi0/10"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.14",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.14",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0E": {
+        "Name": "FW15",
+        "status": "offline",
+        "Protocolos": [
+            "EIGRP",
+            "RIP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.15",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.15",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/22",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.15",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:0F": {
+        "Name": "AP16",
+        "status": "online",
+        "Protocolos": [
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.16",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:10": {
+        "Name": "R17",
+        "status": "offline",
+        "Protocolos": [
+            "EIGRP",
+            "STP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.17",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:11": {
+        "Name": "SW18",
+        "status": "online",
+        "Protocolos": [
+            "STP",
+            "ST",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/18",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.18",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:12": {
+        "Name": "FW19",
+        "status": "offline",
+        "Protocolos": [
+            "BGP",
+            "RIP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/16",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.19",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/1"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.19",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/3",
+                    "Gi0/4",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.19",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:13": {
+        "Name": "AP20",
+        "status": "online",
+        "Protocolos": [
+            "LACP",
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/7",
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.20",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:14": {
+        "Name": "R21",
+        "status": "offline",
+        "Protocolos": [
+            "RIP",
+            "BGP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/14"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.21",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:15": {
+        "Name": "SW22",
+        "status": "online",
+        "Protocolos": [
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/13"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.22",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/8",
+                    "Gi0/10",
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.22",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/9"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.22",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:16": {
+        "Name": "FW23",
+        "status": "offline",
+        "Protocolos": [
+            "RIP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/4",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.23",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:17": {
+        "Name": "AP24",
+        "status": "online",
+        "Protocolos": [
+            "STP",
+            "EIGRP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/17",
+                    "Gi0/18",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.24",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:18": {
+        "Name": "R25",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP",
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.25",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/10",
+                    "Gi0/18",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.25",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/13",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.30.25",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:19": {
+        "Name": "SW26",
+        "status": "online",
+        "Protocolos": [
+            "RIP",
+            "STP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/16",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.26",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/8",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.26",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/8"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.30.26",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1A": {
+        "Name": "FW27",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/8",
+                    "Gi0/13",
+                    "Gi0/21"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.27",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/17",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.27",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1B": {
+        "Name": "AP28",
+        "status": "online",
+        "Protocolos": [
+            "ST",
+            "VRRP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/15",
+                    "Gi0/20",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.28",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/8",
+                    "Gi0/9",
+                    "Gi0/17",
+                    "Gi0/21"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.20.28",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.28",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1C": {
+        "Name": "R29",
+        "status": "offline",
+        "Protocolos": [
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/5",
+                    "Gi0/7",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.29",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1D": {
+        "Name": "SW30",
+        "status": "online",
+        "Protocolos": [
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/13",
+                    "Gi0/19",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.30",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/8",
+                    "Gi0/18",
+                    "Gi0/20",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.30",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1E": {
+        "Name": "FW31",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/15",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.31",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/5",
+                    "Gi0/6",
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.31",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:1F": {
+        "Name": "AP32",
+        "status": "online",
+        "Protocolos": [
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/9",
+                    "Gi0/14"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.32",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/21"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.32",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:20": {
+        "Name": "R33",
+        "status": "offline",
+        "Protocolos": [
+            "EIGRP",
+            "LACP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/16",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.33",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:21": {
+        "Name": "SW34",
+        "status": "online",
+        "Protocolos": [
+            "RIP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/6"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.34",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:22": {
+        "Name": "FW35",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP",
+            "RIP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.35",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/12",
+                    "Gi0/17",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.35",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/12",
+                    "Gi0/15",
+                    "Gi0/21",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.35",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:23": {
+        "Name": "AP36",
+        "status": "online",
+        "Protocolos": [
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/8",
+                    "Gi0/11"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.36",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/11",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.36",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/11",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.30.36",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:24": {
+        "Name": "R37",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "RIP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/16",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.37",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/13",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.37",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:25": {
+        "Name": "SW38",
+        "status": "online",
+        "Protocolos": [
+            "BGP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/12",
+                    "Gi0/15",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.38",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/11"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.38",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/17",
+                    "Gi0/19",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.38",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:26": {
+        "Name": "FW39",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP",
+            "OSPF",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/9"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.39",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:27": {
+        "Name": "AP40",
+        "status": "online",
+        "Protocolos": [
+            "RIP",
+            "LACP",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/11",
+                    "Gi0/15",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.40",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.40",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.30.40",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:28": {
+        "Name": "R41",
+        "status": "offline",
+        "Protocolos": [
+            "ST",
+            "VRRP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/14",
+                    "Gi0/15",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.41",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.41",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:29": {
+        "Name": "SW42",
+        "status": "online",
+        "Protocolos": [
+            "BGP",
+            "VRRP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/16",
+                    "Gi0/20",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.42",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/8",
+                    "Gi0/9",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.42",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2A": {
+        "Name": "FW43",
+        "status": "offline",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/6"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.43",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2B": {
+        "Name": "AP44",
+        "status": "online",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/16",
+                    "Gi0/17",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.44",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/3",
+                    "Gi0/8"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.44",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2C": {
+        "Name": "R45",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/9",
+                    "Gi0/14",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.45",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/11",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.45",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/13",
+                    "Gi0/18",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.45",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2D": {
+        "Name": "SW46",
+        "status": "online",
+        "Protocolos": [
+            "VRRP",
+            "OSPF",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.46",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/7",
+                    "Gi0/15",
+                    "Gi0/21"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.20.46",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2E": {
+        "Name": "FW47",
+        "status": "offline",
+        "Protocolos": [
+            "BGP",
+            "RIP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.47",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.47",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/17",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.47",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:2F": {
+        "Name": "AP48",
+        "status": "online",
+        "Protocolos": [
+            "OSPF",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/9"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.48",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/16",
+                    "Gi0/19",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.48",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/13",
+                    "Gi0/15",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.48",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:30": {
+        "Name": "R49",
+        "status": "offline",
+        "Protocolos": [
+            "LACP",
+            "BGP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/13",
+                    "Gi0/21",
+                    "Gi0/22",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.49",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/15",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.49",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.49",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:31": {
+        "Name": "SW50",
+        "status": "online",
+        "Protocolos": [
+            "STP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/3",
+                    "Gi0/18",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.50",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/14"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.50",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.30.50",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:32": {
+        "Name": "FW51",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/8",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.51",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.20.51",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:33": {
+        "Name": "AP52",
+        "status": "online",
+        "Protocolos": [
+            "EIGRP",
+            "STP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/15",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.52",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.52",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/7",
+                    "Gi0/10",
+                    "Gi0/13",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.30.52",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:34": {
+        "Name": "R53",
+        "status": "offline",
+        "Protocolos": [
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/9",
+                    "Gi0/19",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.53",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:35": {
+        "Name": "SW54",
+        "status": "online",
+        "Protocolos": [
+            "VRRP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.54",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:36": {
+        "Name": "FW55",
+        "status": "offline",
+        "Protocolos": [
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/5",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.55",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/12",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.55",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/4",
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.30.55",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:37": {
+        "Name": "AP56",
+        "status": "online",
+        "Protocolos": [
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/15",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.56",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:38": {
+        "Name": "R57",
+        "status": "offline",
+        "Protocolos": [
+            "ST",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.57",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/14",
+                    "Gi0/21"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.57",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:39": {
+        "Name": "SW58",
+        "status": "online",
+        "Protocolos": [
+            "ST",
+            "LACP",
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/13",
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.58",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3A": {
+        "Name": "FW59",
+        "status": "offline",
+        "Protocolos": [
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/9",
+                    "Gi0/12",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.59",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/12",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.59",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.59",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3B": {
+        "Name": "AP60",
+        "status": "online",
+        "Protocolos": [
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/7",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.60",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3C": {
+        "Name": "R61",
+        "status": "offline",
+        "Protocolos": [
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/9"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.61",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3D": {
+        "Name": "SW62",
+        "status": "online",
+        "Protocolos": [
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.62",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3E": {
+        "Name": "FW63",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/14",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.63",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:3F": {
+        "Name": "AP64",
+        "status": "online",
+        "Protocolos": [
+            "STP",
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.64",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/2",
+                    "Gi0/16",
+                    "Gi0/21"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.20.64",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/3"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.30.64",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:40": {
+        "Name": "R65",
+        "status": "offline",
+        "Protocolos": [
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/15",
+                    "Gi0/17",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.65",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/8",
+                    "Gi0/11",
+                    "Gi0/14",
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.20.65",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/12",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.65",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:41": {
+        "Name": "SW66",
+        "status": "online",
+        "Protocolos": [
+            "STP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/5",
+                    "Gi0/12",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.66",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:42": {
+        "Name": "FW67",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/10",
+                    "Gi0/20",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.67",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/8",
+                    "Gi0/12",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.67",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.67",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:43": {
+        "Name": "AP68",
+        "status": "online",
+        "Protocolos": [
+            "RIP",
+            "VRRP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/19",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.68",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:44": {
+        "Name": "R69",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP",
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/10",
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.69",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.69",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:45": {
+        "Name": "SW70",
+        "status": "online",
+        "Protocolos": [
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.70",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/8",
+                    "Gi0/13"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.70",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:46": {
+        "Name": "FW71",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/4",
+                    "Gi0/11"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.71",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/8",
+                    "Gi0/17",
+                    "Gi0/18",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.71",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:47": {
+        "Name": "AP72",
+        "status": "online",
+        "Protocolos": [
+            "BGP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/13",
+                    "Gi0/14",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.72",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:48": {
+        "Name": "R73",
+        "status": "offline",
+        "Protocolos": [
+            "BGP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/12",
+                    "Gi0/14",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.73",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/13"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.73",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.73",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:49": {
+        "Name": "SW74",
+        "status": "online",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/7",
+                    "Gi0/9"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.74",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4A": {
+        "Name": "FW75",
+        "status": "offline",
+        "Protocolos": [
+            "ST",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/19",
+                    "Gi0/20",
+                    "Gi0/21",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.75",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.75",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4B": {
+        "Name": "AP76",
+        "status": "online",
+        "Protocolos": [
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/3",
+                    "Gi0/10",
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.76",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/15"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.76",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4C": {
+        "Name": "R77",
+        "status": "offline",
+        "Protocolos": [
+            "BGP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/17",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.77",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4D": {
+        "Name": "SW78",
+        "status": "online",
+        "Protocolos": [
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/11",
+                    "Gi0/13",
+                    "Gi0/14"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.78",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/18",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.78",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4E": {
+        "Name": "FW79",
+        "status": "offline",
+        "Protocolos": [
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/21",
+                    "Gi0/22",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.79",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/22",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.79",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:4F": {
+        "Name": "AP80",
+        "status": "online",
+        "Protocolos": [
+            "BGP",
+            "EIGRP",
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/7",
+                    "Gi0/11"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.80",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/10"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.80",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:50": {
+        "Name": "R81",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "VRRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.81",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:51": {
+        "Name": "SW82",
+        "status": "online",
+        "Protocolos": [
+            "ST",
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/15",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.82",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/7",
+                    "Gi0/12",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.82",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/7",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.82",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:52": {
+        "Name": "FW83",
+        "status": "offline",
+        "Protocolos": [
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/10"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.83",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/14"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.83",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/12",
+                    "Gi0/13",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.83",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:53": {
+        "Name": "AP84",
+        "status": "online",
+        "Protocolos": [
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.84",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/15",
+                    "Gi0/16",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.84",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:54": {
+        "Name": "R85",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "OSPF",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/4",
+                    "Gi0/8",
+                    "Gi0/10"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.85",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.85",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/14",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.85",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:55": {
+        "Name": "SW86",
+        "status": "online",
+        "Protocolos": [
+            "BGP",
+            "LACP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/13"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.86",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.86",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/5",
+                    "Gi0/12"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.30.86",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:56": {
+        "Name": "FW87",
+        "status": "offline",
+        "Protocolos": [
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/7",
+                    "Gi0/10",
+                    "Gi0/11"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.87",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:57": {
+        "Name": "AP88",
+        "status": "online",
+        "Protocolos": [
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/11",
+                    "Gi0/21"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.88",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/11",
+                    "Gi0/13",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.88",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:58": {
+        "Name": "R89",
+        "status": "offline",
+        "Protocolos": [
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.89",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/15",
+                    "Gi0/20",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.89",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.89",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:59": {
+        "Name": "SW90",
+        "status": "online",
+        "Protocolos": [
+            "STP",
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/1",
+                    "Gi0/5"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.90",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/12",
+                    "Gi0/13",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.90",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5A": {
+        "Name": "FW91",
+        "status": "offline",
+        "Protocolos": [
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/12",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.91",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5B": {
+        "Name": "AP92",
+        "status": "online",
+        "Protocolos": [
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/9",
+                    "Gi0/18",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.92",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.92",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5C": {
+        "Name": "R93",
+        "status": "offline",
+        "Protocolos": [
+            "LACP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/18",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.93",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/7"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.20.93",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/12",
+                    "Gi0/18",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.30.93",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5D": {
+        "Name": "SW94",
+        "status": "online",
+        "Protocolos": [
+            "RIP",
+            "BGP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/14",
+                    "Gi0/17",
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.94",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/12",
+                    "Gi0/17",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.20.94",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.30.94",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5E": {
+        "Name": "FW95",
+        "status": "offline",
+        "Protocolos": [
+            "EIGRP",
+            "STP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/3",
+                    "Gi0/7",
+                    "Gi0/9"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.95",
+                "SSH": true
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/6",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.20.95",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/21"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.30.95",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:5F": {
+        "Name": "AP96",
+        "status": "online",
+        "Protocolos": [
+            "BGP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/8",
+                    "Gi0/10",
+                    "Gi0/13",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.96",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/7",
+                    "Gi0/11",
+                    "Gi0/15",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.96",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:60": {
+        "Name": "R97",
+        "status": "offline",
+        "Protocolos": [
+            "STP",
+            "ST"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/11"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.97",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/4",
+                    "Gi0/5",
+                    "Gi0/8"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.97",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:61": {
+        "Name": "SW98",
+        "status": "online",
+        "Protocolos": [
+            "RIP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/15",
+                    "Gi0/16",
+                    "Gi0/17"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.98",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:62": {
+        "Name": "FW99",
+        "status": "offline",
+        "Protocolos": [
+            "VRRP",
+            "LACP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/2",
+                    "Gi0/10",
+                    "Gi0/16"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "ALLOW_ALL"
+                ],
+                "ET": true,
+                "IP": "192.168.10.99",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/9",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "BLOCK_IP",
+                    "REQUIRED_IP"
+                ],
+                "ET": true,
+                "IP": "192.168.20.99",
+                "SSH": false
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/19"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.99",
+                "SSH": true
+            }
+        }
+    },
+    "3D:AF:09:7F:00:63": {
+        "Name": "AP100",
+        "status": "online",
+        "Protocolos": [
+            "VRRP",
+            "ST",
+            "EIGRP"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/4",
+                    "Gi0/20",
+                    "Gi0/22"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL"
+                ],
+                "ET": false,
+                "IP": "192.168.10.100",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/5",
+                    "Gi0/12",
+                    "Gi0/18"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.100",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/2"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.100",
+                "SSH": false
+            }
+        }
+    },
+    "3D:AF:09:7F:00:64": {
+        "Name": "R101",
+        "status": "offline",
+        "Protocolos": [
+            "RIP",
+            "STP",
+            "OSPF"
+        ],
+        "VLANs": {
+            "VL10": {
+                "Ports": [
+                    "Gi0/11",
+                    "Gi0/20"
+                ],
+                "Plicies": [
+                    "ALLOW_ALL",
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.10.101",
+                "SSH": false
+            },
+            "VL20": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/16",
+                    "Gi0/19",
+                    "Gi0/23"
+                ],
+                "Plicies": [
+                    "BLOCK_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.20.101",
+                "SSH": true
+            },
+            "VL30": {
+                "Ports": [
+                    "Gi0/10",
+                    "Gi0/19",
+                    "Gi0/23",
+                    "Gi0/24"
+                ],
+                "Plicies": [
+                    "REQUIRED_IP"
+                ],
+                "ET": false,
+                "IP": "192.168.30.101",
+                "SSH": false
+            }
+        }
+    }
+}
